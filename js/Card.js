@@ -6,8 +6,8 @@ function(domBinding){
 
     var Card = function(id){
         this.id = id;
-        this.num = id % 13 + 1;
-        this.suit = id % 4;
+        this.num = id % 13 + 1;   /* 13 types of card numbers */
+        this.suit = id % 4;       /*  4 types of card suits   */
         this.flipped = true;
 
         var acutualNum = this.num + 1;
